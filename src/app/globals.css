@@ -1,0 +1,57 @@
+/* styles/globals.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your additional styles... */
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dark {
+  background-color: #0f172a;
+  color: #F0ECD2;
+  min-height: 900px;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+}
+
+.light {
+  min-height: 50vw;
+  background-color: #F0ECD2;
+  position: relative;
+
+  padding-left: 25px;
+  padding-right: 25px;
+  --textColor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #626262;
+}
+
+
+
+.nav-link {
+  color: #F0ECD2;
+  /* Default link color */
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.active-link {
+  color: red;
+  /* Change to your desired active link color */
+}
+
+
+.ql-container {
+  font-size: 28px !important;
+}
+
+.quill>.ql-container>.ql-editor.ql-blank::before {
+  color: #b3b3b1;
+}
