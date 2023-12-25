@@ -28,14 +28,14 @@ const About = () => {
           </div>
           <div className="w-full lg:w-[40%] lg:pl-8">
 
-            <Image src="/birana-experts.png" className="w-full  pt-5 lg:pt-10" />
+            <Image alt="birana-experts" src="/birana-experts.png" className="w-full  pt-5 lg:pt-10" />
           </div>
 
         </div>
         <div className=" lg:pt-36 lg:ml-32  flex flex-col lg:flex-row ">
           <div className="w-full order-2  lg:w-[40%] lg:pr-8">
 
-            <Image src="/birana-innovators.png" className="w-full  pt-5 lg:pt-10" />
+            <Image alt="birana-innovators" src="/birana-innovators.png" className="w-full  pt-5 lg:pt-10" />
           </div>
           <div className="lg:w-[50%] order-1 lg:order-2 pt-16 lg:pl-24 xl:pl-48 lg:pt-16 ">
 
