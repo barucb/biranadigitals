@@ -18,7 +18,7 @@ const Featured = () => {
             Birana Digitals - Where Imagination Meets Innovation
           </p>
           <div className="align-center justify-center flex mt-12">
-            <Link to="/contact">
+            <Link href="/contact">
               <button className="p-5 mb-8    duration-500 ease-in-out  rounded-md     font-semibold  bg-[#fc7405]  ">
                 Get Started
               </button>
