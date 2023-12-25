@@ -11,7 +11,7 @@ const BlogPage = async ({ searchParams }) => {
   const page = parseInt(searchParams.page) || 1;
   const { cat } = searchParams;
 
-  const data = await fetch('http://localhost:3000/api/catwithposts')
+  const data = await fetch('http://biranadigitals.vercel.app/api/catwithposts')
   const catWithPost = await data.json()
   console.log("category : ", catWithPost)
 

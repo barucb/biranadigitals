@@ -30,7 +30,7 @@ const WritePage = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/categories");
+        const res = await fetch("http://biranadigitals.vercel.app/api/categories");
 
         if (!res.ok) {
           throw new Error("failed");

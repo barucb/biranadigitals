@@ -8,7 +8,7 @@ import styles from "./menuCategories.module.css";
 
 const MenuCategories = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/categories")
+    const res = await fetch("http://biranadigitals.vercel.app/api/categories")
     if (!res.ok) {
       throw new Error("failed")
     }

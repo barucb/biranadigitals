@@ -29,7 +29,7 @@ export const BlogCard = ({ props }) => {
 }
 
 const Blogs = async ({ num }) => {
-  const data = await fetch("http://localhost:3000/api/homepageposts")
+  const data = await fetch("http://biranadigitals.vercel.app/api/homepageposts")
   const BlogsList = await data.json()
   // Ensure that BlogsList is available before rendering
   if (!BlogsList) {
@@ -78,7 +78,7 @@ export default Blogs;
 
 // export async function getServerSideProps() {
 //   try {
-//     const res = await fetch('http://localhost:3000/api/homepageposts');
+//     const res = await fetch('http://biranadigitals.vercel.app/api/homepageposts');
 
 //     if (!res.ok) {
 //       console.error("Error fetching data. Status:", res.status);
