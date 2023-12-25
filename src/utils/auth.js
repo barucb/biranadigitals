@@ -11,6 +11,7 @@ export const authOptions = {
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_SECRET,
+      redirectUri: 'https://yourdomain.com/api/auth/callback/google',
     }),
     GithubProvider({
       clientId: process.env.GITHUB_ID,
