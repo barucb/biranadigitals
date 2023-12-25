@@ -118,7 +118,7 @@ const WritePage = () => {
   };
 
 
-  if (session?.user?.role !== "ADMIN") {
+  if (session?.user?.role === "ADMIN") {
     return (
       <>
 
