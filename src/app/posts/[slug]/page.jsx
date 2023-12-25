@@ -28,7 +28,7 @@ const SinglePage = async ({ params }) => {
           <div className="flex items-center mb-4">
             {data?.user?.image && (
               <div className="mr-4">
-                <img src={data.user.image} alt="" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
+                <Image  src={data.user.image} alt="" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
               </div>
             )}
             <div >
@@ -44,7 +44,7 @@ const SinglePage = async ({ params }) => {
         </div>
         {data?.img && (
           <div className="flex-1">
-            <img src={data.img} alt="" className="w-full h-auto" />
+            <Image  src={data.img} alt="" className="w-full h-auto" />
           </div>
         )}
       </div>

@@ -22,7 +22,7 @@ const Navbar = () => {
         ">
 
 
-          <img src="/logo.png" className="w-16 sm:w-20  sm:h-10 h-8" />
+          <Image  src="/logo.png" className="w-16 sm:w-20  sm:h-10 h-8" />
 
           <p className="">
 

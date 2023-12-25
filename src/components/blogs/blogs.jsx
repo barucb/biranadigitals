@@ -6,7 +6,7 @@ import { FaEye } from 'react-icons/fa';
 export const BlogCard = ({ props }) => {
   return (
     <div key={props.id} className={"border-[#fc7405] mt-8  rounded-2xl  px-4 border-2  hover:scale-105 transition-transform transform  p-1 shadow-md shadow-red-400"}>
-      <img src={props?.img || "/logo.png"} alt={props?.title} className="w-full rounded-t-2xl pt-2 object-cover h-60 " />
+      <Image src={props?.img || "/logo.png"} alt={props?.title} className="w-full rounded-t-2xl pt-2 object-cover h-60 " />
       <h2 className="text-xl pt-2  font-bold">{props?.title}</h2>
       <span>{props?.createdAt?.substring(0, 10)}</span>
 
@@ -43,7 +43,7 @@ const Blogs = async ({ num }) => {
         <h4 className="sm:pl-5 mb-3 mt-5 text-3xl font-bold sm:text-4xl">Recent Blogs</h4>
         <div className="hidden sm:grid  sm:grid-cols-2 gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
           {BlogsList?.map((blog) => (
-            <Link className='pt-5' href={`/posts/${blog?.slug}`}>
+            <Link key={blog.id} className='pt-5' href={`/posts/${blog?.slug}`}>
 
               <BlogCard props={blog} />
             </Link>
@@ -51,7 +51,7 @@ const Blogs = async ({ num }) => {
         </div>
         <div className="px- w-full sm:hidden grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {BlogsList?.slice(0, num).map((blog) => (
-            <Link href={`/posts/${blog?.slug}`}>
+            <Link key={blog.id} href={`/posts/${blog?.slug}`}>
 
               <BlogCard props={blog} />
             </Link>

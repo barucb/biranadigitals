@@ -18,7 +18,7 @@ export default function Home({ searchParams }) {
     <div>
       <Featured />
       <Services />
-      <Blogs num = {4} />
+      <Blogs num={4} />
       <CategoryList />
       <Testimonials />
       <Footer />

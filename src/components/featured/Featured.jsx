@@ -23,7 +23,7 @@ const Featured = () => {
         </div>
       </div>
       <div className="md:mx-36 pt-20 lg:mx-48 xl:mr-16">
-        <img className=" xl:w-[1400px]" src="/marketing-consulting-illustration.png" alt=""   />
+        <Image  className=" xl:w-[1400px]" src="/marketing-consulting-illustration.png" alt=""   />
       </div>
     </div>
     </>

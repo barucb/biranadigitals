@@ -42,7 +42,7 @@ const Dash = () => {
     if (session?.user?.role === "USER") {
         return (
             <div>
-                <h1>You are not an Admin. You can't write posts</h1>
+                <h1>You are not an Admin. You can&apos;t write posts</h1>
             </div>
         )
     }

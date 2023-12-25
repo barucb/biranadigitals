@@ -53,7 +53,7 @@ const AuthLinks = () => {
             {navLinks.map((link) => {
               return (
 
-                <li onClick={() => setOpenNavMenu(false)} className=" pl-8  pb-3  " >
+                <li key={link.name} onClick={() => setOpenNavMenu(false)} className=" pl-8  pb-3  " >
                   <Link className="text-white hover:text-red-600" href={link.href}  >{link.name}</Link>
                 </li>
               )

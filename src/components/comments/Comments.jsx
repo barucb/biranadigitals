@@ -202,7 +202,7 @@ const Comments = ({ postSlug }) => {
             <div className="" key={comment.id}>
               <div className="pt-5 flex gap-2">
                 {comment?.user?.image && (
-                  <img
+                  <Image
                     src={comment.user.image}
                     alt=""
                     width={50}
@@ -218,7 +218,7 @@ const Comments = ({ postSlug }) => {
                   </div>
                 </div>
               </div>
-              <p className="italic pt-2 pl-12">"{comment.desc}"</p>
+              <p className="italic pt-2 pl-12">{comment.desc}</p>
               {status === "authenticated" ? (
 
                 <button onClick={() => handleReplyClick(comment.id)} key={comment.id} className="text-[#fc7405] pl-12 font-semibold">Reply</button>
@@ -250,7 +250,7 @@ const Comments = ({ postSlug }) => {
                   <div className="pl-12" key={reply?.id}>
                     <div className="pt-5 flex gap-2">
                       {reply?.user?.image && (
-                        <img
+                        <Image
                           src={reply?.user.image}
                           alt=""
                           width={50}
@@ -266,7 +266,7 @@ const Comments = ({ postSlug }) => {
                         </div>
                       </div>
                     </div>
-                    <p className="italic pt-2 pl-12">"{reply?.replyDesc}"</p>
+                    <p className="italic pt-2 pl-12">{reply?.replyDesc}</p>
                     <div>
                       {session && session?.user.email === reply?.userEmail && (
                         <button disabled={submitting} className="pl-12 text-[#fc7405] pt-2 font-semibold" onClick={() => handleDeleteReply(reply?.id)}>

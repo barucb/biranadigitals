@@ -178,7 +178,7 @@ const WritePage = () => {
   if (session?.user?.role === "USER") {
     return (
       <div className="pt-48">
-        <h1>You are not an Admin. You can't write posts</h1>
+        <h1>You are not an Admin. You can&apos;t write posts</h1>
       </div>
     )
   }

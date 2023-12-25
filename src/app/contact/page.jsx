@@ -64,7 +64,7 @@ const Contact = () => {
       <div className='py-32 lg:py-48  flex flex-col lg:flex-row' >
         <div className='text-center lg:ml-32 lg:w-1/2  lg:text-start'>
           <p className='lg:text-9xl  text-5xl text-[#fc7405]'>
-            Let's Grow Your Brand
+            Let&apos;s Grow Your Brand
           </p>
           <p className='lg:text-4xl text-2xl pt-5 '>
             Digitalize Your Business For a Sustained Growth.

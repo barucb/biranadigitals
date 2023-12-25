@@ -20,7 +20,7 @@ const TestimonialCard = (props) => {
             </p>
             <div className="flex items-center mt-4">
                 <a href="#" className="relative block">
-                    <img alt="profile" src={props.image} className=" object-cover rounded-full h-16 w-16 " />
+                    <Image  alt="profile" src={props.image} className=" object-cover rounded-full h-16 w-16 " />
                 </a>
                 <div className="flex flex-col justify-between ml-2">
                     <span className="text-xl font-semibold text-[#007F4E]">
