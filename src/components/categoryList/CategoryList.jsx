@@ -32,7 +32,7 @@ const CategoryList = async () => {
             <div className="flex flex-col hover:scale-110 justify-center pt-8  items-center">
 
               {item.img && (
-                <Image  className="rounded-full w-16 h-16  md:w-32 md:h-32"
+                <Image className="rounded-full w-16 h-16  md:w-32 md:h-32"
                   src={item.img}
                   alt=""
 

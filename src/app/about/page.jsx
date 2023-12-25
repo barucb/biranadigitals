@@ -2,7 +2,7 @@ import Footer from "@/components/footer/Footer"
 import Services from "@/components/services/services"
 import Link from "next/link"
 import React from "react"
-
+import Image from "next/image"
 const About = () => {
   return (
     <>

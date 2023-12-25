@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { FaEye } from 'react-icons/fa';
+import Image from "next/image"
 
 
 export const BlogCard = ({ props }) => {

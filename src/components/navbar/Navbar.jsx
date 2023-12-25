@@ -4,6 +4,7 @@ import Link from "next/link";
 import AuthLinks from "../authLinks/AuthLinks";
 import ThemeToggle from "../themeToggle/ThemeToggle";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
+import Image from "next/image"
 
 const Navbar = () => {
 
@@ -22,7 +23,7 @@ const Navbar = () => {
         ">
 
 
-          <Image  src="/logo.png" className="w-16 sm:w-20  sm:h-10 h-8" />
+          <Image src="/logo.png" className="w-16 sm:w-20  sm:h-10 h-8" />
 
           <p className="">
 
