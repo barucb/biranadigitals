@@ -1,6 +1,7 @@
 import React from "react";
 import Welcome from "../welcome/Welcome";
 import Image from "next/image"
+import Link from "next/link";
 
 const Featured = () => {
 
@@ -17,10 +18,11 @@ const Featured = () => {
             Birana Digitals - Where Imagination Meets Innovation
           </p>
           <div className="align-center justify-center flex mt-12">
-
-            <button className="p-5 mb-8    duration-500 ease-in-out  rounded-md     font-semibold  bg-[#fc7405]  ">
-              Get Started
-            </button>
+            <Link to="/contact">
+              <button className="p-5 mb-8    duration-500 ease-in-out  rounded-md     font-semibold  bg-[#fc7405]  ">
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
         <div className="md:mx-36 pt-20 lg:mx-48 xl:mr-16">
