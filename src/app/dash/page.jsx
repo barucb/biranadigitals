@@ -9,7 +9,7 @@ const Dash = () => {
     const [formSubmissions, setFormSubmissions] = useState([]);
     const fetchFormSubmissions = async () => {
         try {
-            const response = await fetch('/api/formSubmission');
+            const response = await fetch('https://biranadigitals.vercel.app/api/formSubmission');
             const data = await response.json();
 
             if (response.ok) {
